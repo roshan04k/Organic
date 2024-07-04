@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="Organic.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organic</title>
+    <style>
+        body {
+            background-color: rgb(211, 243, 211);
+        }
+        .product{
+            display: flex;
+            justify-content: center;
+            width: 80%;
+            margin-left: 10%;
+            font-size: xx-large;
+        }
+        img {
+            margin-top: 20%;
+            height: 400px;
+            margin-right: 30px;
+        }
+        button {
+            background-color: green;
+            color: white;
+            font-size: 50px;
+            margin-left: 30%;
+            border-radius: 30px;
+            box-shadow: 0 0 10px 10px lightgreen;
+        }
+        .buy {
+            width: 80%;
+            margin-top: 10%;
+            margin-left: 10%;
+            font-size: xx-large;
+        }
+        .buy h1 {
+            text-align: center;
+        }
+        .btn {
+            background-color: red;
+            color: white;
+            font-size: 40px;
+            margin-left: 100%;
+            border-radius: 30px;
+            box-shadow: 0 0 10px 10px lightgreen;
+        }
+    </style>
+</head>
+<body>
+    <div class="product">
+        <div class="sub">
+            <img src="product3.jpeg">
+        </div>
+        <div class="sub">
+            <h2>Garlic, water, salt, acidity, turmeric, regulator (ins 296) and stabilizer (ins 415). contains permitted class ii preservative (ins 211)</h2>
+            <p> &starf; 4.6/5 | 10 Reviews</p>
+            <p>MRP: <del>$220</del> <b>$ 180</b> (4%Off) <br> (Inclusive of all taxes)</p>
+            <a href="#buy1"><button>Buy Now</button></a>
+        </div>
+    </div>
+    <br>
+    <div class="buy" id="buy1">
+        <h1>Payment Widget</h1>
+        <form>
+           <table>
+            <th>
+                Payment Method: 
+                <select>
+                    <option>Credit Card</option>
+                    <option>Debit Card</option>
+                    <option>UPI</option>
+                </select>
+            </th>
+            <hr>
+            <tr>
+                <td>Card Holder Name :</td>
+            </tr>
+            <tr>
+                <td class="detail"><input type="text" placeholder="Enter Youre Name" required></td>
+            </tr>
+            <tr>
+                <td>Credit Card Number :</td>
+            </tr>
+            <tr>
+                <td class="detail"><input type="number" placeholder="0000 0000 0000" required></td>
+            </tr>
+            <tr>
+                <td>Expiry Date :</td>
+            </tr>
+            <tr>
+                <td class="detail"><input type="month" required>
+                    <select>
+                        <option value="2024">2024</option>
+                        <option value="2025">2025</option>
+                        <option value="2026">2026</option>
+                        <option value="2027">2027</option>
+                        <option value="2028">2028</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Cvv Number :</td>
+            </tr>
+            <tr>
+                <td><input type="number" placeholder="000" required></td>
+                <td>Please Check this field</td>
+            </tr>
+            <tr>
+                <td><input class="btn" type="submit" value="Confirm Payment"></td>
+            </tr>
+           </table>
+        </form>
+    </div>
+</body>
+</html>
